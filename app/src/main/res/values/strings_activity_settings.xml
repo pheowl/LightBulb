@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>	
+    <string name="general_settings">General Settings</string>
+    <string name="pref_regmode">Choose regulation mode</string>
+    <string name="mac_address">Choose MAC-Address of your device</string>
+    <string name="mac_add_def">00:12:12:04:06:29</string>
+	<string name="f_title">Fourier Regulation Settings</string>
+	<string name="min_sel">Min. Frequency (0-511)</string>
+	<string name="min_sel_def">0</string>
+	<string name="max_sel">Max. Frequency (1-512)</string>
+	<string name="max_sel_def">512</string>
+	<string name="sw_reg_tp">Change</string>
+	<string name="sw_summ_on">Regulation by Colortable</string>
+	<string name="sw_summ_off">Split-Frequency-Regulation</string>
+	
+	<string name="c_title">Candle Regulation Settings</string>
+	<string name="candle_offset_title">Base Brightness of the Candle</string>
+	<string name="candle_offset_def">32</string>
+	<string name="candle_flicker_title">Flickering intensity</string>
+	<string name="candle_flicker_def">48</string>
+	
+	<string name="a_title">Accelerometer Regulation Settings</string>
+    <string name="acc_bright">Accelerometer Brightness</string>
+    <string name="acc_bright_def">100</string>
+    
+	<string name="pref_sleep_mode_title">Sleep Mode</string>
+    <string name="pref_sleep_mode_expl">Puts the device in sleep mode after specified delay in millieseconds\nTo wake up: Turn sleep mode off and put magnet to the device!</string>
+    <string name="sleep_delay">Sleep Mode Delay</string>
+    <string name="sleep_delay_def">500</string>
+    
+    
+    <string-array name="pref_reg_list_titles">
+        <item>Pattern organized regulation</item>
+        <item>Orientation enhanced regulation</item>
+        <item>Self-regulation(Candle)</item>
+        <item>Fourier guided regulation</item>
+        <item>No regulation (manual mode)</item>
+    </string-array>
+    <string-array name="pref_reg_list_values">
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+   </string-array>
+
+</resources>

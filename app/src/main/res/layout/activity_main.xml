@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View
+            android:id="@+id/colordisp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#000000" />
+  	<SeekBar
+  	    android:id="@+id/seekBar_red"
+  	    android:max="255"
+  	    android:layout_margin="8dp"
+  	    android:layout_width="0dp"
+  	    android:layout_height="wrap_content" />
+  	<SeekBar
+  	    android:id="@+id/seekBar_green"
+  	    android:max="255"
+  	    android:layout_margin="8dp"
+  	    android:layout_width="0dp"
+  	    android:layout_height="wrap_content" />
+  	<SeekBar
+  	    android:id="@+id/seekBar_blue"
+  	    android:max="255"
+  	    android:layout_margin="8dp"
+  	    android:layout_width="0dp"
+  	    android:layout_height="wrap_content" />
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+
+		<com.example.lightbulb.ColorPicker
+            android:id="@+id/Colorpicker"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layerType="software" />
+
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	   
+	<TextView 
+		    android:id="@+id/Status"
+			android:layout_width="match_parent"
+			android:layout_height="68dp"
+			android:gravity="bottom"
+			android:paddingBottom="0dp"
+			android:textAlignment="gravity"
+			android:textIsSelectable="false"/>
+
+		<Button
+			android:id="@+id/sendButton"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:focusable="true"
+			android:onClick="startSettings"
+			android:text="@string/button_settings" />
+	</LinearLayout>
+</TableLayout>
